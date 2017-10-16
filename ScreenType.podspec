@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ScreenType'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ScreenType.'
+  s.version          = '1.0.0'
+  s.summary          = 'Easily distinguish between iPhone models in Objective-C and Swift'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Enables you to use UIScreen.current to get the ScreenType of the current device and see if it is equal to, greater than, or less than a particular iPhone or iPad model's size.
                        DESC
 
   s.homepage         = 'https://github.com/allgamesallfree/ScreenType'
