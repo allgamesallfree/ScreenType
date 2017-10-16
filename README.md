@@ -32,13 +32,46 @@ pod 'ScreenType'
 
 You can also install ScreenType manually by importing [ScreenType.swift](https://github.com/allgamesallfree/ScreenType/blob/master/ScreenType/Classes/ScreenType.swift) into your project
 
-## Usage in Swift
+## Usage
 
-Code samples here
+### Swift
 
-## Usage in Objective-C
+```Swift
+// Check for a specific model
+if UIScreen.current == .iPhoneX {
+    print("Screen type is iPhone X")
+}
 
-Code samples here
+// Check for multiple models
+if UIScreen.current == .iPhone6 || UIScreen.current == .iPhone6Plus {
+    print("Screen type is either iPhone 6 or 6 Plus")
+}
+
+// Find all models smaller than a certain screen size
+if UIScreen.current.rawValue < ScreenType.iPhone6.rawValue {
+    print("Screen is smaller than an iPhone 6")
+}
+
+// Find all models larger than or equal to a certain screen size
+if UIScreen.current.rawValue >= ScreenType.iPad10_5.rawValue {
+    print("Screen type is either iPad 10.5 or iPad 12.9")
+}
+
+```
+
+### Objective-C
+
+```Objective-C
+// Check for a specific model
+if ([UIScreen current] == ScreenTypeIPhoneX) {
+    NSLog(@"Screen Type is iPhone X");
+}
+
+// Find all models larger than a certain screen size
+if ([UIScreen current] > ScreenTypeIPhone5) {
+    NSLog(@"Screen is larger than an iPhone 5");
+}
+```
 
 ## Author
 
