@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		01B8E80511941BA724113388151F40EC /* Pods-ScreenType_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE92CE4E5741BE152E71FBC310510D8B /* Pods-ScreenType_Example-dummy.m */; };
+		0A69720F1F9547430055C432 /* ScreenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69720E1F9547400055C432 /* ScreenType.swift */; };
 		0DEA9FD6FF645B88C37F237025DA315C /* ScreenType-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8AEFFF58AB54C0437E0B34632B25AC /* ScreenType-dummy.m */; };
-		36AEA327A2B34779DF4C30A06BE8231B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35794FA02D44CD1EEBDD6564B8879CC5 /* ReplaceMe.swift */; };
 		3C67A8269A3932B9D15FA1690076EB9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		6077B71790F6937FF5EFC239AA6D0839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		8CF06C7FEFCB98EBAB7C1481EC4FF31F /* Pods-ScreenType_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85D9332FE86CCA9080A173D351E67E78 /* Pods-ScreenType_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,14 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06221529CDDD12214E03C3A752CBC935 /* Pods_ScreenType_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScreenType_Example.framework; path = "Pods-ScreenType_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06221529CDDD12214E03C3A752CBC935 /* Pods_ScreenType_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenType_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		074017FAE4590543A2D79DCA2ADE555C /* Pods-ScreenType_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreenType_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0A69720E1F9547400055C432 /* ScreenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScreenType.swift; path = ScreenType/Classes/ScreenType.swift; sourceTree = "<group>"; };
 		0FB8C64C6BF994A57DB6ECBEAD40C23B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10269FE5AA9F80BF7673B64A49BC501F /* Pods-ScreenType_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScreenType_Tests-umbrella.h"; sourceTree = "<group>"; };
-		18EDE58A186EE07317A414BEC898C6F4 /* ScreenType.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ScreenType.modulemap; sourceTree = "<group>"; };
+		18EDE58A186EE07317A414BEC898C6F4 /* ScreenType.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ScreenType.modulemap; sourceTree = "<group>"; };
 		355AAEAE41C4418617E015C76BCD11AE /* Pods-ScreenType_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreenType_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		35794FA02D44CD1EEBDD6564B8879CC5 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ScreenType/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		38D3331398CBA914892510F33F7DFC67 /* Pods-ScreenType_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ScreenType_Example.modulemap"; sourceTree = "<group>"; };
+		38D3331398CBA914892510F33F7DFC67 /* Pods-ScreenType_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ScreenType_Example.modulemap"; sourceTree = "<group>"; };
 		3E0192ABA86977194A73790F6DE74207 /* Pods-ScreenType_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreenType_Example-resources.sh"; sourceTree = "<group>"; };
 		47A4425B2E7E755ECC70723C33AE8266 /* Pods-ScreenType_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreenType_Tests-resources.sh"; sourceTree = "<group>"; };
 		48B85C52094926DFD2AC0CC043FFD5C6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,12 +46,12 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		698B24A2D0A1ACF547EA2DA3DBE32840 /* Pods-ScreenType_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreenType_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		70F88A434A35A805A61BC4D70EDCEF8A /* Pods-ScreenType_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScreenType_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		75E7B3FC883C245CDD884FA761544A7A /* ScreenType.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScreenType.framework; path = ScreenType.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E7B3FC883C245CDD884FA761544A7A /* ScreenType.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScreenType.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77B61BB63ED922B350269D4472C1EBE4 /* Pods-ScreenType_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScreenType_Tests-dummy.m"; sourceTree = "<group>"; };
 		80ADF40882DFA361D531864BDB73E787 /* Pods-ScreenType_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreenType_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		85D9332FE86CCA9080A173D351E67E78 /* Pods-ScreenType_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScreenType_Example-umbrella.h"; sourceTree = "<group>"; };
 		88B7595B55A7EEA9544E88EBCCEBD3D0 /* ScreenType-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScreenType-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A200BC6F47A4C3EFB08BC554CD6A7E7C /* ScreenType.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScreenType.xcconfig; sourceTree = "<group>"; };
 		B3EBA7F9D42EE46B2D7188AD63BDB81C /* Pods-ScreenType_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScreenType_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		BE92CE4E5741BE152E71FBC310510D8B /* Pods-ScreenType_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScreenType_Example-dummy.m"; sourceTree = "<group>"; };
@@ -59,8 +59,8 @@
 		DD5824970B1BB668D5FC2FB595D5A3F7 /* Pods-ScreenType_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScreenType_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DE8AEFFF58AB54C0437E0B34632B25AC /* ScreenType-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScreenType-dummy.m"; sourceTree = "<group>"; };
 		E1D3EF4E604EE1CDC2B3488CBAC9EF3F /* Pods-ScreenType_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScreenType_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E4359277A64527699BC4FB366441D6E5 /* Pods_ScreenType_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScreenType_Tests.framework; path = "Pods-ScreenType_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFE61AB5327E2AA02A5B89A4C419883B /* Pods-ScreenType_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ScreenType_Tests.modulemap"; sourceTree = "<group>"; };
+		E4359277A64527699BC4FB366441D6E5 /* Pods_ScreenType_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScreenType_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE61AB5327E2AA02A5B89A4C419883B /* Pods-ScreenType_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ScreenType_Tests.modulemap"; sourceTree = "<group>"; };
 		F7C83A3FC1E108AED38CFE0B62F4680F /* Pods-ScreenType_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScreenType_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,7 +199,7 @@
 		FB9BF286387A116704084188FD811B20 /* ScreenType */ = {
 			isa = PBXGroup;
 			children = (
-				35794FA02D44CD1EEBDD6564B8879CC5 /* ReplaceMe.swift */,
+				0A69720E1F9547400055C432 /* ScreenType.swift */,
 				8C3627C2DBA5084E9893BD35682708FC /* Support Files */,
 			);
 			name = ScreenType;
@@ -296,6 +296,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					8561D657A77E250E3925DB226CB79A0E = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -329,8 +334,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36AEA327A2B34779DF4C30A06BE8231B /* ReplaceMe.swift in Sources */,
 				0DEA9FD6FF645B88C37F237025DA315C /* ScreenType-dummy.m in Sources */,
+				0A69720F1F9547430055C432 /* ScreenType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A200BC6F47A4C3EFB08BC554CD6A7E7C /* ScreenType.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -511,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A200BC6F47A4C3EFB08BC554CD6A7E7C /* ScreenType.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
