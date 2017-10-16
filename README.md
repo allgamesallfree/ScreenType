@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/ScreenType.svg?style=flat)](http://cocoapods.org/pods/ScreenType)
 [![Platform](https://img.shields.io/cocoapods/p/ScreenType.svg?style=flat)](http://cocoapods.org/pods/ScreenType)
 
+Easily distinguish between iPhone models in both Objective-C and Swift.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -25,7 +27,7 @@ pod 'ScreenType'
 
 ### Manual Installation
 
-You can also install ScreenType manually by importing [link here](ScreenType.swift) into your project
+You can also install ScreenType manually by importing [ScreenType.swift](https://github.com/allgamesallfree/ScreenType/blob/master/ScreenType/Classes/ScreenType.swift) into your project
 
 ## Usage in Swift
 
@@ -37,7 +39,7 @@ Code samples here
 
 ## Author
 
-Max Stein | [maxste.in](maxste.in) | [https://twitter.com/maxsteinapps](Twitter)
+Max Stein | [maxste.in](maxste.in) | [Twitter](https://twitter.com/maxsteinapps)
 
 ## License
 
