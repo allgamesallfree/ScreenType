@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ScreenType_Example' do
+  pod 'ScreenType', :path => '../'
+
+  target 'ScreenType_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
