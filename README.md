@@ -75,7 +75,7 @@ if ([UIScreen current] > ScreenTypeIPhone5) {
 
 ## Author
 
-Max Stein | [maxste.in](maxste.in) | [Twitter](https://twitter.com/maxsteinapps)
+Max Stein | [maxste.in](http://maxste.in) | [Twitter](https://twitter.com/maxsteinapps)
 
 ## License
 
