@@ -1,6 +1,6 @@
 //
-//  DeviceType.swift
-//  DeviceType
+//  ScreenType.swift
+//  ScreenType
 //
 //  Created by Stein, Maxwell on 10/11/17.
 //  Copyright © 2017 Maxwell Stein. All rights reserved.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-@objc enum ScreenType: Int {
+@objc public enum ScreenType: Int {
     case iPhone4, iPhone5, iPhone6, iPhone6Plus, iPhoneX, iPad9_7, iPad10_5, iPad12_9
 }
 
 extension UIScreen {
-    @objc static var current: ScreenType {
+    @objc public static var current: ScreenType {
         let screenLongestSide: CGFloat = {
             let screenBounds = main.bounds
             if screenBounds.height > screenBounds.width {
