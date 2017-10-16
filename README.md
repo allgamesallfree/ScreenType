@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/ScreenType.svg?style=flat)](http://cocoapods.org/pods/ScreenType)
 [![Platform](https://img.shields.io/cocoapods/p/ScreenType.svg?style=flat)](http://cocoapods.org/pods/ScreenType)
 
-Easily distinguish between iPhone models in both Objective-C and Swift.
+Easily distinguish between iPhone models in Objective-C and Swift.
 
 ## Example
 
