@@ -1,6 +1,5 @@
 # ScreenType
 
-[![CI Status](http://img.shields.io/travis/allgamesallfree/ScreenType.svg?style=flat)](https://travis-ci.org/allgamesallfree/ScreenType)
 [![Version](https://img.shields.io/cocoapods/v/ScreenType.svg?style=flat)](http://cocoapods.org/pods/ScreenType)
 [![License](https://img.shields.io/cocoapods/l/ScreenType.svg?style=flat)](http://cocoapods.org/pods/ScreenType)
 [![Platform](https://img.shields.io/cocoapods/p/ScreenType.svg?style=flat)](http://cocoapods.org/pods/ScreenType)
