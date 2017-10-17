@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ObjectiveCViewController : UIViewController
+@interface ScreenTypeObjectiveCViewController : UIViewController
 
 @end

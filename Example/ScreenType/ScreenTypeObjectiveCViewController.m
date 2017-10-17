@@ -1,19 +1,19 @@
 //
-//  ObjectiveCViewController.m
+//  ScreenTypeObjectiveCViewController.m
 //  ScreenType_Example
 //
 //  Created by Stein, Maxwell on 10/16/17.
 //  Copyright © 2017 CocoaPods. All rights reserved.
 //
 
-#import "ObjectiveCViewController.h"
+#import "ScreenTypeObjectiveCViewController.h"
 #import "ScreenType-Swift.h"
 
-@interface ObjectiveCViewController ()
+@interface ScreenTypeObjectiveCViewController ()
 
 @end
 
-@implementation ObjectiveCViewController
+@implementation ScreenTypeObjectiveCViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

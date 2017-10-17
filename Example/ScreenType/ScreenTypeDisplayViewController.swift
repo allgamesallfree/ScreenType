@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ScreenTypeDisplayViewController.swift
 //  ScreenType_Example
 //
 //  Created by Maxwell Stein on 10/8/17.
@@ -9,11 +9,16 @@
 import UIKit
 import ScreenType
 
-class ViewController: UIViewController {
-
+class ScreenTypeDisplayViewController: UIViewController {
+    
+    @IBOutlet weak var screenTypeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        displayScreenType()
+        addObjectiveCView()
+        
         if UIScreen.current == .iPhoneX {
             print("Screen type is iPhone X")
         }
@@ -38,10 +43,37 @@ class ViewController: UIViewController {
         if isIPhone6OrLater {
             print("Screen type is iPhone 6, 6 Plus, or X")
         }
-
-        let objectiveCViewController = ObjectiveCViewController()
+    }
+    
+    private func addObjectiveCView() {
+        let objectiveCViewController = ScreenTypeObjectiveCViewController()
         addChildViewController(objectiveCViewController)
         view.addSubview(objectiveCViewController.view)
+    }
+    
+    /// Gets the current iPhone/iPad screen type and displays it
+    private func displayScreenType() {
+        let screenName: String = {
+            switch UIScreen.current {
+            case .iPhone4:
+                return "iPhone 3.5 inch"
+            case .iPhone5:
+                return "iPhone 4.0 inch"
+            case .iPhone6:
+                return "iPhone 4.7 inch"
+            case .iPhone6Plus:
+                return "iPhone 5.5 inch"
+            case .iPhoneX:
+                return "iPhone X"
+            case .iPad9_7:
+                return "iPad 9.7 inch"
+            case .iPad10_5:
+                return "iPad 10.5 inch"
+            case .iPad12_9:
+                return "iPad 12.9 inch"
+            }
+        }()
+        screenTypeLabel.text = screenName
     }
 
 }
