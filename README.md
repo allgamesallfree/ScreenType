@@ -1,6 +1,6 @@
 # ScreenType
 
-![ScreenType](/ScreenType.png "ScreenType")
+![ScreenType](/test2.gif "ScreenType")
 
 [![Version](https://img.shields.io/cocoapods/v/ScreenType.svg?style=flat)](http://cocoapods.org/pods/ScreenType)
 [![License](https://img.shields.io/cocoapods/l/ScreenType.svg?style=flat)](http://cocoapods.org/pods/ScreenType)
@@ -10,7 +10,7 @@ Easily distinguish between iPhone models in Objective-C and Swift.
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To demo the example project, clone or download the repo, and open "*ScreenType.xcworkspace*" from the "*Example*" directory.
 
 ## Requirements
 

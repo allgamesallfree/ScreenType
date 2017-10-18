@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ScreenType'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Easily distinguish between iPhone models in Objective-C and Swift'
 
 # This description is used to generate tags and improve search results.
@@ -22,7 +22,7 @@ Enables you to use UIScreen.current to get the ScreenType of the current device 
                        DESC
 
   s.homepage         = 'https://github.com/allgamesallfree/ScreenType'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://github.com/allgamesallfree/ScreenType/blob/master/ScreenType.png'#, 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Max Stein' => 'max34563@gmail.com' }
   s.source           = { :git => 'https://github.com/allgamesallfree/ScreenType.git', :tag => s.version.to_s }

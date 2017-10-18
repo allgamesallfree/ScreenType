@@ -60,9 +60,9 @@ class ScreenTypeDisplayViewController: UIViewController {
             case .iPhone5:
                 return "iPhone 4.0 inch"
             case .iPhone6:
-                return "iPhone 4.7 inch"
+                return "iPhone 8"
             case .iPhone6Plus:
-                return "iPhone 5.5 inch"
+                return "iPhone 8 Plus"
             case .iPhoneX:
                 return "iPhone X"
             case .iPad9_7:
