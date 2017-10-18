@@ -22,7 +22,7 @@ Enables you to use UIScreen.current to get the ScreenType of the current device 
                        DESC
 
   s.homepage         = 'https://github.com/allgamesallfree/ScreenType'
-  s.screenshots     = 'https://raw.githubusercontent.com/allgamesallfree/ScreenType/master/ScreenType.png', "ScreenType.gif"
+  s.screenshots     = 'https://raw.githubusercontent.com/allgamesallfree/ScreenType/master/ScreenType.png', "https://raw.githubusercontent.com/allgamesallfree/ScreenType/master/ScreenType.gif"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Max Stein' => 'max34563@gmail.com' }
   s.source           = { :git => 'https://github.com/allgamesallfree/ScreenType.git', :tag => s.version.to_s }
