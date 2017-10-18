@@ -1,6 +1,6 @@
 # ScreenType
 
-![ScreenType](/test2.gif "ScreenType")
+![ScreenType](/test6.gif "ScreenType")
 
 [![Version](https://img.shields.io/cocoapods/v/ScreenType.svg?style=flat)](http://cocoapods.org/pods/ScreenType)
 [![License](https://img.shields.io/cocoapods/l/ScreenType.svg?style=flat)](http://cocoapods.org/pods/ScreenType)
