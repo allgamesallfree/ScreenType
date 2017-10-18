@@ -8,11 +8,44 @@
 
 import UIKit
 
+/// The screen sizes for all available iPhone and iPad's
+///
+/// - iPhone4: 3.5 inch iPhone (4, 4S)
+/// - iPhone5: 4.0 inch iPhone (5, 5S, 5C)
+/// - iPhone6: 4.7 inch iPhone (6, 7, 8)
+/// - iPhone6Plus: 5.5 inch iPhone (6+, 7+, 8+)
+/// - iPhoneX: 5.8 inch iPhone
+/// - iPad9_7: 9.7 inch iPad
+/// - iPad10_5: 10.5 inch iPad
+/// - iPad12_9: 12.9 inch iPad
 @objc public enum ScreenType: Int {
-    case iPhone4, iPhone5, iPhone6, iPhone6Plus, iPhoneX, iPad9_7, iPad10_5, iPad12_9
+    /// 3.5 inch iPhone (4, 4S)
+    case iPhone4
+
+    /// 4.0 inch iPhone (5, 5S, 5C)
+    case iPhone5
+
+    /// 4.7 inch iPhone (6, 7, 8)
+    case iPhone6
+
+    /// 5.5 inch iPhone (6+, 7+, 8+)
+    case iPhone6Plus
+
+    /// 5.8 inch iPhone
+    case iPhoneX
+
+    /// 9.7 inch iPad
+    case iPad9_7
+
+    /// 10.5 inch iPad
+    case iPad10_5
+
+    /// 12.9 inch iPad
+    case iPad12_9
 }
 
 extension UIScreen {
+    /// Gets the iPhone / iPad screen type for the currently running device
     @objc public static var current: ScreenType {
         let screenLongestSide: CGFloat = {
             let screenBounds = main.bounds
