@@ -22,7 +22,7 @@ iOS 9.0+
 
 ## Installation
 
-ScreenType is available through [CocoaPods](http://cocoapods.org). To install
+ScreenType is available through [CocoaPods](https://cocoapods.org/pods/ScreenType). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
