@@ -64,7 +64,9 @@ if UIScreen.current.rawValue >= ScreenType.iPad10_5.rawValue {
 
 ### Objective-C
 
-If you're using Cocoapods add `@import ScreenType;` to the top of your file. You'll also need a [bridging header](https://www.hackingwithswift.com/example-code/language/how-to-create-an-objective-c-bridging-header-to-use-code-in-swift) whether you installed or manually or through Cocoapods
+You'll need a [bridging header](https://www.hackingwithswift.com/example-code/language/how-to-create-an-objective-c-bridging-header-to-use-code-in-swift) in order to use ScreenType in Objective-C. 
+
+If you're using Cocoapods add `@import ScreenType;` to the top of your file as well.
 
 ```Objective-C
 // Check for a specific model
@@ -77,6 +79,10 @@ if ([UIScreen current] > ScreenTypeIPhone5) {
     NSLog(@"Screen is larger than an iPhone 5");
 }
 ```
+
+## Contributions
+
+You are welcome to fork and submit pull requests
 
 ## Author
 
