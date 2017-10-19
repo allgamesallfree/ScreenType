@@ -31,11 +31,13 @@ pod 'ScreenType'
 
 ### Manual Installation
 
-You can also install ScreenType manually by importing [ScreenType.swift](https://github.com/allgamesallfree/ScreenType/blob/master/ScreenType/Classes/ScreenType.swift) into your project
+Install ScreenType manually by importing [ScreenType.swift](https://github.com/allgamesallfree/ScreenType/blob/master/ScreenType/Classes/ScreenType.swift) into your project
 
 ## Usage
 
 ### Swift
+
+If you're using Cocoapods add: `import ScreenType` prior to using ScreenType in your file.
 
 ```Swift
 // Check for a specific model
@@ -61,6 +63,8 @@ if UIScreen.current.rawValue >= ScreenType.iPad10_5.rawValue {
 ```
 
 ### Objective-C
+
+If you're using Cocoapods add `@import ScreenType;` to the top of your file. You'll also need a [bridging header](https://www.hackingwithswift.com/example-code/language/how-to-create-an-objective-c-bridging-header-to-use-code-in-swift) whether you installed or manually or through Cocoapods
 
 ```Objective-C
 // Check for a specific model
