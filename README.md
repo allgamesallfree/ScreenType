@@ -51,12 +51,12 @@ if UIScreen.current == .iPhone6 || UIScreen.current == .iPhone6Plus {
 }
 
 // Find all models smaller than a certain screen size
-if UIScreen.current.rawValue < ScreenType.iPhone6.rawValue {
+if UIScreen.current < ScreenType.iPhone6 {
     print("Screen is smaller than an iPhone 6")
 }
 
 // Find all models larger than or equal to a certain screen size
-if UIScreen.current.rawValue >= ScreenType.iPad10_5.rawValue {
+if UIScreen.current >= ScreenType.iPad10_5 {
     print("Screen type is either iPad 10.5 or iPad 12.9")
 }
 

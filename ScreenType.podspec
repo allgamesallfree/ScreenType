@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ScreenType'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'Easily distinguish between iPhone models in Objective-C and Swift'
 
 # This description is used to generate tags and improve search results.
