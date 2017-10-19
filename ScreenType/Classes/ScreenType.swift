@@ -44,6 +44,12 @@ import UIKit
     case iPad12_9
 }
 
+extension ScreenType: Comparable {
+    public static func <(lhs: ScreenType, rhs: ScreenType) -> Bool {
+        return lhs.rawValue < rhs.rawValue
+    }
+}
+
 extension UIScreen {
     /// Gets the iPhone / iPad screen type for the currently running device
     @objc public static var current: ScreenType {
