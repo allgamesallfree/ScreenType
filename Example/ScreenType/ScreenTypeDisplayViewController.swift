@@ -27,11 +27,11 @@ class ScreenTypeDisplayViewController: UIViewController {
             print("Screen type is either iPhone 6 or 6 Plus")
         }
 
-        if UIScreen.current < ScreenType.iPhone6 {
+        if UIScreen.current < .iPhone6 {
             print("Screen is smaller than an iPhone 6")
         }
 
-        if UIScreen.current >= ScreenType.iPad10_5 {
+        if UIScreen.current >= .iPad10_5 {
             print("Screen type is either iPad 10.5 or iPad 12.9")
         }
 
@@ -39,7 +39,7 @@ class ScreenTypeDisplayViewController: UIViewController {
         let isIPhone4Or5Description = isIPhone4Or5 ? "Screen type is either iPhone 4 or 5" : "Screen type is not iPhone 4 or 5"
         print(isIPhone4Or5Description)
 
-        let isIPhone6OrLater = UIScreen.current >= ScreenType.iPhone6 && UIScreen.current < ScreenType.iPad9_7
+        let isIPhone6OrLater = UIScreen.current >= .iPhone6 && UIScreen.current < .iPad9_7
         if isIPhone6OrLater {
             print("Screen type is iPhone 6, 6 Plus, or X")
         }
