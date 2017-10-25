@@ -41,18 +41,18 @@ If you're using Cocoapods add: `import ScreenType` prior to using ScreenType in 
 
 ```Swift
 // Check for a specific model
-if UIScreen.current == .iPhoneX {
+if UIScreen.current == .iPhone5_8 {
     print("Screen type is iPhone X")
 }
 
 // Check for multiple models
-if UIScreen.current == .iPhone6 || UIScreen.current == .iPhone6Plus {
-    print("Screen type is either iPhone 6 or 6 Plus")
+if UIScreen.current == .iPhone4_7 || UIScreen.current == .iPhone5_5 {
+    print("Screen type is either iPhone 6/7/8 or 6/7/8 Plus")
 }
 
 // Find all models smaller than a certain screen size
-if UIScreen.current < .iPhone6 {
-    print("Screen is smaller than an iPhone 6")
+if UIScreen.current < .iPhone4_7 {
+    print("Screen is smaller than an iPhone 6/7/8")
 }
 
 // Find all models larger than or equal to a certain screen size
@@ -70,13 +70,13 @@ If you're using Cocoapods add `@import ScreenType;` to the top of your file as w
 
 ```Objective-C
 // Check for a specific model
-if ([UIScreen current] == ScreenTypeIPhoneX) {
+if ([UIScreen current] == ScreenTypeIPhone5_8) {
     NSLog(@"Screen Type is iPhone X");
 }
 
 // Find all models larger than a certain screen size
-if ([UIScreen current] > ScreenTypeIPhone5) {
-    NSLog(@"Screen is larger than an iPhone 5");
+if ([UIScreen current] > ScreenTypeIPhone4_0) {
+    NSLog(@"Screen is larger than an iPhone 5/S/C");
 }
 ```
 

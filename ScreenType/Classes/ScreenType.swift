@@ -10,29 +10,29 @@ import UIKit
 
 /// The screen sizes for all available iPhone and iPad's
 ///
-/// - iPhone4: 3.5 inch iPhone (4, 4S)
-/// - iPhone5: 4.0 inch iPhone (5, 5S, 5C)
-/// - iPhone6: 4.7 inch iPhone (6, 7, 8)
-/// - iPhone6Plus: 5.5 inch iPhone (6+, 7+, 8+)
-/// - iPhoneX: 5.8 inch iPhone
+/// - iPhone3_5: 3.5 inch iPhone (4, 4S)
+/// - iPhone4_0: 4.0 inch iPhone (5, 5S, 5C)
+/// - iPhone4_7: 4.7 inch iPhone (6, 7, 8)
+/// - iPhone5_5: 5.5 inch iPhone (6+, 7+, 8+)
+/// - iPhone5_8: 5.8 inch iPhone (X)
 /// - iPad9_7: 9.7 inch iPad
 /// - iPad10_5: 10.5 inch iPad
 /// - iPad12_9: 12.9 inch iPad
 @objc public enum ScreenType: Int {
     /// 3.5 inch iPhone (4, 4S)
-    case iPhone4
+    case iPhone3_5
 
     /// 4.0 inch iPhone (5, 5S, 5C)
-    case iPhone5
+    case iPhone4_0
 
     /// 4.7 inch iPhone (6, 7, 8)
-    case iPhone6
+    case iPhone4_7
 
     /// 5.5 inch iPhone (6+, 7+, 8+)
-    case iPhone6Plus
+    case iPhone5_5
 
-    /// 5.8 inch iPhone
-    case iPhoneX
+    /// 5.8 inch iPhone (X)
+    case iPhone5_8
 
     /// 9.7 inch iPad
     case iPad9_7
@@ -63,15 +63,15 @@ extension UIScreen {
         }()
         switch screenLongestSide {
         case 480:
-            return .iPhone4
+            return .iPhone3_5
         case 568:
-            return .iPhone5
+            return .iPhone4_0
         case 667:
-            return .iPhone6
+            return .iPhone4_7
         case 736:
-            return .iPhone6Plus
+            return .iPhone5_5
         case 812:
-            return .iPhoneX
+            return .iPhone5_8
         case 1024:
             return .iPad9_7
         case 1112:
