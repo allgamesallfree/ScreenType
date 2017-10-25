@@ -19,29 +19,29 @@ class ScreenTypeDisplayViewController: UIViewController {
         displayScreenType()
         addObjectiveCView()
         
-        if UIScreen.current == .iPhoneX {
+        if UIScreen.current == .iPhone5_8 {
             print("Screen type is iPhone X")
         }
 
-        if UIScreen.current == .iPhone6 || UIScreen.current == .iPhone6Plus {
-            print("Screen type is either iPhone 6 or 6 Plus")
+        if UIScreen.current == .iPhone4_7 || UIScreen.current == .iPhone5_5 {
+            print("Screen type is either iPhone 6/7/8 or 6/7/8 Plus")
         }
 
-        if UIScreen.current < .iPhone6 {
-            print("Screen is smaller than an iPhone 6")
+        if UIScreen.current < .iPhone4_7 {
+            print("Screen is smaller than an iPhone 6/7/8")
         }
 
         if UIScreen.current >= .iPad10_5 {
             print("Screen type is either iPad 10.5 or iPad 12.9")
         }
 
-        let isIPhone4Or5 = UIScreen.current == .iPhone4 || UIScreen.current == .iPhone5
-        let isIPhone4Or5Description = isIPhone4Or5 ? "Screen type is either iPhone 4 or 5" : "Screen type is not iPhone 4 or 5"
+        let isIPhone4Or5 = UIScreen.current == .iPhone3_5 || UIScreen.current == .iPhone4_0
+        let isIPhone4Or5Description = isIPhone4Or5 ? "Screen type is either iPhone 4 or 5/C/S" : "Screen type is not iPhone 4 or 5/C/S"
         print(isIPhone4Or5Description)
 
-        let isIPhone6OrLater = UIScreen.current >= .iPhone6 && UIScreen.current < .iPad9_7
+        let isIPhone6OrLater = UIScreen.current >= .iPhone4_7 && UIScreen.current < .iPad9_7
         if isIPhone6OrLater {
-            print("Screen type is iPhone 6, 6 Plus, or X")
+            print("Screen type is iPhone 6/7/8, 6/7/8 Plus, or X")
         }
     }
     
@@ -55,16 +55,16 @@ class ScreenTypeDisplayViewController: UIViewController {
     private func displayScreenType() {
         let screenName: String = {
             switch UIScreen.current {
-            case .iPhone4:
+            case .iPhone3_5:
                 return "iPhone 3.5 inch"
-            case .iPhone5:
+            case .iPhone4_0:
                 return "iPhone 4.0 inch"
-            case .iPhone6:
+            case .iPhone4_7:
                 return "iPhone 4.7 inch"
-            case .iPhone6Plus:
+            case .iPhone5_5:
                 return "iPhone 5.5 inch"
-            case .iPhoneX:
-                return "iPhone X"
+            case .iPhone5_8:
+                return "iPhone 5.8 inch"
             case .iPad9_7:
                 return "iPad 9.7 inch"
             case .iPad10_5:
