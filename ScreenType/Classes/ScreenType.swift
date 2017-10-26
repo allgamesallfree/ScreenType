@@ -53,8 +53,8 @@ extension ScreenType: Comparable {
 extension UIScreen {
     /// Gets the iPhone / iPad screen type for the currently running device
     @objc public static var current: ScreenType {
-		let screenLongestSide = max(main.bounds.width, main.bounds.height)
-		switch screenLongestSide {
+	let screenLongestSide = max(main.bounds.width, main.bounds.height)
+	switch screenLongestSide {
         case 480:
             return .iPhone3_5
         case 568:
