@@ -86,7 +86,7 @@ You are welcome to fork and submit pull requests
 
 ## Author
 
-Max Stein | [maxste.in](http://maxste.in) | [Twitter](https://twitter.com/maxsteinapps)
+Max Stein | [maxste.in](https://maxste.in) | [Twitter](https://twitter.com/maxsteinapps)
 
 ## License
 
