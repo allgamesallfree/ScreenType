@@ -71,6 +71,8 @@ class ScreenTypeDisplayViewController: UIViewController {
                 return "iPad 10.5 inch"
             case .iPad12_9:
                 return "iPad 12.9 inch"
+            case .unknown:
+                return "Unknown device"
             }
         }()
         screenTypeLabel.text = screenName
