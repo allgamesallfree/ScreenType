@@ -20,28 +20,31 @@ import UIKit
 /// - iPad12_9: 12.9 inch iPad
 @objc public enum ScreenType: Int {
     /// 3.5 inch iPhone (4, 4S)
-    case iPhone3_5
+    case iPhone3_5 = 480
 
     /// 4.0 inch iPhone (5, 5S, 5C)
-    case iPhone4_0
+    case iPhone4_0 = 568
 
     /// 4.7 inch iPhone (6, 7, 8)
-    case iPhone4_7
+    case iPhone4_7 = 667
 
     /// 5.5 inch iPhone (6+, 7+, 8+)
-    case iPhone5_5
+    case iPhone5_5 = 736
 
     /// 5.8 inch iPhone (X)
-    case iPhone5_8
+    case iPhone5_8 = 812
 
     /// 9.7 inch iPad
-    case iPad9_7
+    case iPad9_7 = 1024
 
     /// 10.5 inch iPad
-    case iPad10_5
+    case iPad10_5 = 1112
 
     /// 12.9 inch iPad
-    case iPad12_9
+    case iPad12_9 = 1366
+
+    /// Unknown device
+    case unknown = -1
 }
 
 extension ScreenType: Comparable {
@@ -53,24 +56,7 @@ extension ScreenType: Comparable {
 extension UIScreen {
     /// Gets the iPhone / iPad screen type for the currently running device
     @objc public static var current: ScreenType {
-	let screenLongestSide = max(main.bounds.width, main.bounds.height)
-	switch screenLongestSide {
-        case 480:
-            return .iPhone3_5
-        case 568:
-            return .iPhone4_0
-        case 667:
-            return .iPhone4_7
-        case 736:
-            return .iPhone5_5
-        case 812:
-            return .iPhone5_8
-        case 1024:
-            return .iPad9_7
-        case 1112:
-            return .iPad10_5
-        default:
-            return .iPad12_9
-        }
+        let screenLongestSide = Int(max(main.bounds.width, main.bounds.height))
+        return ScreenType(rawValue: screenLongestSide) ?? .unknown
     }
 }
