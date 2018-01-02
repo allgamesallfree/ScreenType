@@ -11,7 +11,7 @@ import UIKit
 /// The screen sizes for all available iPhone and iPad's
 ///
 /// - iPhone3_5: 3.5 inch iPhone (4, 4S)
-/// - iPhone4_0: 4.0 inch iPhone (5, 5S, 5C)
+/// - iPhone4_0: 4.0 inch iPhone (5, 5S, 5C, SE)
 /// - iPhone4_7: 4.7 inch iPhone (6, 7, 8)
 /// - iPhone5_5: 5.5 inch iPhone (6+, 7+, 8+)
 /// - iPhone5_8: 5.8 inch iPhone (X)
@@ -22,7 +22,7 @@ import UIKit
     /// 3.5 inch iPhone (4, 4S)
     case iPhone3_5 = 480
 
-    /// 4.0 inch iPhone (5, 5S, 5C)
+    /// 4.0 inch iPhone (5, 5S, 5C, SE)
     case iPhone4_0 = 568
 
     /// 4.7 inch iPhone (6, 7, 8)
@@ -48,7 +48,7 @@ import UIKit
 }
 
 extension ScreenType: Comparable {
-    public static func <(lhs: ScreenType, rhs: ScreenType) -> Bool {
+    public static func < (lhs: ScreenType, rhs: ScreenType) -> Bool {
         return lhs.rawValue < rhs.rawValue
     }
 }
