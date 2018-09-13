@@ -19,12 +19,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    if ([UIScreen current] == ScreenTypeIPhoneX) {
-        NSLog(@"Screen Type is iPhone X");
+    if ([UIScreen current] == ScreenTypeIPhone5_8) {
+        NSLog(@"Screen Type is iPhone 5.8 inch");
     }
 
-    if ([UIScreen current] > ScreenTypeIPhone5) {
-        NSLog(@"Screen is larger than an iPhone 5");
+    if ([UIScreen current] > ScreenTypeIPhone4_0) {
+        NSLog(@"Screen is larger than an iPhone 4.0 inch");
     }
 }
 

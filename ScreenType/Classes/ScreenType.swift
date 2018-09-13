@@ -8,31 +8,40 @@
 
 import UIKit
 
-/// The screen sizes for all available iPhone and iPad's
+/// The screen sizes for all available iPhone's and iPad's
 ///
-/// - iPhone4: 3.5 inch iPhone (4, 4S)
-/// - iPhone5: 4.0 inch iPhone (5, 5S, 5C)
-/// - iPhone6: 4.7 inch iPhone (6, 7, 8)
-/// - iPhone6Plus: 5.5 inch iPhone (6+, 7+, 8+)
-/// - iPhoneX: 5.8 inch iPhone
+/// - iPhone3_5: 3.5 inch iPhone (4, 4S)
+/// - iPhone4_0: 4.0 inch iPhone (5, 5S, 5C, SE)
+/// - iPhone4_7: 4.7 inch iPhone (6, 7, 8)
+/// - iPhone5_5: 5.5 inch iPhone (6+, 7+, 8+)
+/// - iPhone5_8: 5.8 inch iPhone (X, XS)
+/// - iPhone6_1: 6.1 inch iPhone (XR)
+/// - iPhone6_5: 6.5 inch iPhone (XS Max)
 /// - iPad9_7: 9.7 inch iPad
 /// - iPad10_5: 10.5 inch iPad
 /// - iPad12_9: 12.9 inch iPad
+/// - unknown: Couldn't determine device
 @objc public enum ScreenType: Int {
     /// 3.5 inch iPhone (4, 4S)
-    case iPhone4
+    case iPhone3_5
 
-    /// 4.0 inch iPhone (5, 5S, 5C)
-    case iPhone5
+    /// 4.0 inch iPhone (5, 5S, 5C, SE)
+    case iPhone4_0
 
     /// 4.7 inch iPhone (6, 7, 8)
-    case iPhone6
+    case iPhone4_7
 
     /// 5.5 inch iPhone (6+, 7+, 8+)
-    case iPhone6Plus
+    case iPhone5_5
 
-    /// 5.8 inch iPhone
-    case iPhoneX
+    /// 5.8 inch iPhone (X, XS)
+    case iPhone5_8
+    
+    /// 6.1 inch iPhone (XR)
+    case iPhone6_1
+    
+    /// 6.5 inch iPhone (XS Max)
+    case iPhone6_5
 
     /// 9.7 inch iPad
     case iPad9_7
@@ -42,10 +51,13 @@ import UIKit
 
     /// 12.9 inch iPad
     case iPad12_9
+    
+    /// Couldn't determine device
+    case unknown
 }
 
 extension ScreenType: Comparable {
-    public static func <(lhs: ScreenType, rhs: ScreenType) -> Bool {
+    public static func < (lhs: ScreenType, rhs: ScreenType) -> Bool {
         return lhs.rawValue < rhs.rawValue
     }
 }
@@ -53,31 +65,28 @@ extension ScreenType: Comparable {
 extension UIScreen {
     /// Gets the iPhone / iPad screen type for the currently running device
     @objc public static var current: ScreenType {
-        let screenLongestSide: CGFloat = {
-            let screenBounds = main.bounds
-            if screenBounds.height > screenBounds.width {
-                return screenBounds.height
-            } else {
-                return screenBounds.width
-            }
-        }()
+        let screenLongestSide: CGFloat = max(main.bounds.width, main.bounds.height)
         switch screenLongestSide {
         case 480:
-            return .iPhone4
+            return .iPhone3_5
         case 568:
-            return .iPhone5
+            return .iPhone4_0
         case 667:
-            return .iPhone6
+            return .iPhone4_7
         case 736:
-            return .iPhone6Plus
+            return .iPhone5_5
         case 812:
-            return .iPhoneX
+            return .iPhone5_8
+        case 896:
+            return main.scale == 3 ? .iPhone6_5 : .iPhone6_1
         case 1024:
             return .iPad9_7
         case 1112:
             return .iPad10_5
-        default:
+        case 1366:
             return .iPad12_9
+        default:
+            return .unknown
         }
     }
 }
