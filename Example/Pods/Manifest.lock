@@ -1,5 +1,5 @@
 PODS:
-  - ScreenType (0.1.0)
+  - ScreenType (1.0.3)
 
 DEPENDENCIES:
   - ScreenType (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ScreenType: 139b79079225dcaa654b20c96c004fe4fa6617ea
+  ScreenType: 4f13c95add7d33080c0e75a6ba5250784d64d0d0
 
-PODFILE CHECKSUM: eb54cfccd29be74eb75be68ec2328aa3e60491d2
+PODFILE CHECKSUM: b5ce4623d378e334e6f19ca45d656ded3f46417b
 
 COCOAPODS: 1.3.1

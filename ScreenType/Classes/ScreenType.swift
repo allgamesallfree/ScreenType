@@ -36,10 +36,10 @@ import UIKit
 
     /// 5.8 inch iPhone (X, XS)
     case iPhone5_8
-    
+
     /// 6.1 inch iPhone (XR)
     case iPhone6_1
-    
+
     /// 6.5 inch iPhone (XS Max)
     case iPhone6_5
 
@@ -51,7 +51,7 @@ import UIKit
 
     /// 12.9 inch iPad
     case iPad12_9
-    
+
     /// Couldn't determine device
     case unknown
 }
